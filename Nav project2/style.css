@@ -1,0 +1,41 @@
+body{
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:serif;
+}
+nav ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: pink;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid pink;
+    margin-top: 1px;
+
+}
+nav ul li:hover{
+    background:red;
+    opacity: .7;
+    
+}
+nav ul li ul li{
+    display: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    
+}
+nav ul li:hover li{
+    display:block;
+
+}

@@ -1,0 +1,27 @@
+/*==================
+    MAIN CSS
+==================*/
+#main_menu{
+    width: 1005;
+    clear: both;
+}
+.inner_menu_cotainer{
+    
+    
+}
+#main_menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+#main_menu ul li a{
+    
+}
+#main_menu ul li a:hover{
+    
+}

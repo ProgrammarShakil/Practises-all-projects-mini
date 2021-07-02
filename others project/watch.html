@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+	  body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 90vh;
+	  	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	  	font-weight: 700;
+	  	 background: linear-gradient(to right, #298785,#39329e, #258786, #1845d8);
+	  	color: #fff;
+	  	font-size: 30px;
+	  }
+h1{
+	display: inline;
+}
+.watch{
+	padding: 20px 40px;
+	width: 620px;
+	height: 125px;
+	font-size: 50px;
+    border: 5px solid red;
+	border-radius: 5px;
+
+}
+
+	</style>
+</head> 
+<body>
+	
+<div class="watch">
+	<h1 id="hours">hours</h1>
+	<h1>:</h1>
+	<h1 id="minutes">minutes</h1>
+	<h1>:</h1>
+	<h1 id="seconds">seconds</h1>
+	<h1 id="format">format</h1>
+</div>
+
+	<script type="text/javascript">
+
+		function onclick(){
+			var date = new Date();
+			var hours = date.getHours();
+			var minutes = date.getMinutes();
+			var seconds = date.getSeconds();
+			var format = "AM";
+
+			if (date == 12 )
+			      {format = "AM" }
+
+
+            // when date is bigger than 12
+
+			if (date > 12 )
+			      {format = "PM"; 
+				   hours = hours - 12 }
+
+				   // when hours miniutes seconds is smaller than 10
+			if (hours < 10 )
+			      {hours = "0" + hours }
+
+			if (minutes < 10 )
+			      {minutes = "0" + minutes }
+
+			if (seconds < 10 )
+			      {seconds = "0" + seconds }
+
+
+
+			document.getElementById("hours").innerHTML = hours;
+			document.getElementById("minutes").innerHTML = minutes;
+			document.getElementById("seconds").innerHTML = seconds;
+			document.getElementById("format").innerHTML = format;
+
+			}
+	    setInterval(onclick,0);
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

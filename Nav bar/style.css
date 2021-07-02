@@ -1,0 +1,48 @@
+ul{
+            margin: 0;
+            padding: 0;
+            background: slategray;
+            overflow: hidden;
+ }
+
+ul li{
+            display: inline-block;
+            float: right;
+
+}
+ul li a:hover{
+    background: violet;
+    color: teal;
+}
+
+ul li a{
+            text-decoration: none ;
+            padding:12px 22px;
+            text-transform: capitalize;
+            color: snow;
+            display: inline-block;
+            border: 1px solid white;
+}
+
+.m1 a:hover{  
+            background: turquoise;
+            color: rgb(32, 8, 245);
+            
+         
+           
+}
+.m1 {
+           display: none;
+           background: rgb(221, 11, 211);
+           box-shadow: 0 10px 26px 0 rgba(0, 0, 0, 0.3);
+           position: absolute;
+           width: 150px;
+          text-align: center;
+}
+.n:hover .m1{
+    display: block;
+}
+.m1 a{
+           display: block;
+           
+}

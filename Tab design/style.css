@@ -1,0 +1,30 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.btn-cover{
+    width: 600px;
+    margin: 0 auto;
+}
+.btn-cover ul li{
+    list-style: none;
+    display: inline;
+    float: left;
+    padding: 10px 15px;
+    background-color: aquamarine;
+    color:blueviolet;
+}
+.tabs{
+   background-color: aqua;
+    width: 450px;
+    text-align: center;
+    margin-left:40px;
+    margin-top: 20px;
+    color:crimson;
+    line-height: 200px;
+}
+.tab{
+ border-bottom: 1px solid white;
+}

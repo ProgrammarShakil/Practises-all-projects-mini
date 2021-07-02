@@ -1,0 +1,95 @@
+﻿
+
+<html>
+
+<head>
+
+<title> HI IT IS MY FIRST WEBSITE
+
+</title>
+
+<style>
+.sideNav{height:100%;
+width:0; 
+position:fixed;
+z-index:1;
+top:0;
+left:0;
+background-color:#111;
+overflow-x:hidden;
+transition:0.5s;
+padding-top:60px;
+}
+.sideNav a { 
+padding:8px 8px 8px 32px ;
+text-decoration:none;
+font-size:25px;
+color:#818181;
+display:block;
+transition:0.5s;
+
+}
+
+
+
+.sideNav a:hover , .offcanvas a:focus{color:#f1f1f1;
+
+}
+
+
+</style>
+
+<script>
+
+function openNav(){
+
+document.getElementById("mysideNav").style.width="250px";
+
+
+}
+
+
+
+
+function closeNav(){
+
+document.getElementById("mysideNav").style.width="0";
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+<div id="mysideNav" class="sideNav">
+
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >+</a>
+
+<a href="#">service</a>
+
+<a href="#">clients</a>
+
+<a href="#">contact</a>
+
+<a href="#">about</a>
+
+</div>
+
+<span style="font-size:30px; cursor:pointer;" onclick="openNav()"> =</span>
+
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <style>
+        .calculator {
+            width: 226px;
+            margin: 0 auto;
+            margin-top: 200px;
+            border: 1px solid red;
+            box-shadow: 1px 3px 10px 4px #000;
+            padding: 15px;
+
+        }
+
+        .group input {
+            margin-top: 5px;
+            width: 40px;
+            padding: 9px;
+            border: 1px solid blue;
+            font-size: 20px;
+            background: rgba(255, 0, 255, 0.26);
+            color: #fff;
+            border-radius: 2px;
+
+
+        }
+
+        .input {
+            width: 85%;
+            height: 40px;
+            background: #fff;
+            outline: none;
+            border: none;
+            border: 1px solid pink;
+            border-radius: 2px;
+            font-size: 20px;
+            padding: 0 15px;
+        }
+
+        .group input:hover {
+            background: #95d395;
+            outline: none;
+            border: 1px solid #054005;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input type="text" class="input" id="result" placeholder= "0" disabled>
+
+        <div class="group">
+
+            <input onclick="mycalc(this.value);" type="submit" value="7">
+            <input onclick="mycalc(this.value);" type="submit" value="8">
+            <input onclick="mycalc(this.value);" type="submit" value="9">
+            <input onclick="mycalc(this.value);" type="submit" value="0">
+            <input onclick="mycalc(this.value);" type="submit" value="+">
+
+
+        </div> <!-- /.group -->
+
+        <div class="group">
+
+            <input onclick="mycalc(this.value);" type="submit" value="4">
+            <input onclick="mycalc(this.value);" type="submit" value="5">
+            <input onclick="mycalc(this.value);" type="submit" value="6">
+            <input onclick="mycalc(this.value);" type="submit" value="E">
+            <input onclick="mycalc(this.value);" type="submit" value="*">
+
+
+        </div> <!-- /.group -->
+        <div class="group">
+
+            <input onclick="mycalc(this.value);" type="submit" value="1">
+            <input onclick="mycalc(this.value);" type="submit" value="2">
+            <input onclick="mycalc(this.value);" type="submit" value="3">
+            <input onclick="mycalc(this.value);" type="submit" value="4">
+            <input onclick="mycalc(this.value);" type="submit" value="-">
+
+
+        </div> <!-- /.group -->
+        <div class="group">
+
+            <input onclick="mycalc(this.value);" type="submit" value="x">
+            <input onclick="clean()" type="submit" value="C">
+            <input onclick="mycalc(this.value);" type="submit" value="0">
+            <input onclick="mycalc(this.value);" type="submit" value="/">
+            <input onclick="equal();" type="submit" value="=">
+
+
+        </div> <!-- /.group -->
+    </div> <!-- /.calculator -->
+
+
+
+    <script>
+        function mycalc(x) {
+
+            document.getElementById("result").value += x;
+        }
+       function clean() {
+     
+           document.getElementById("result").value = ' ';
+
+       }
+        
+        function equal(){
+            var equ =  document.getElementById("result").value ;
+            
+            document.getElementById("result").value = eval(equ);
+        }
+      
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,34 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.tabs-cover{
+    width:;
+    height: 38px;
+}
+.tab-btn{  
+    text-align: center;
+    list-style-type:none;
+    display: inline-block;
+    float: left;
+    padding: 10px 15px;
+    color: #fff;
+    background:green;
+    width: 65px;
+    border-right:1px solid white;
+}
+.tabs{
+    width: 800px;
+    position: absolute;
+    margin-left:40px;
+
+}
+.tab{
+    width: 479px;
+    background: blue;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    border-bottom: 1px solid white;
+}

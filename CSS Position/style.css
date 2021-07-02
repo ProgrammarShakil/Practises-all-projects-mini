@@ -1,0 +1,41 @@
+div{
+position: fixed;
+bottom:0;
+left: 0;
+top: 0;
+right: 0;
+margin: auto;
+
+
+
+}
+
+
+#square{
+height: 250px;
+width: 400px;
+background: green;
+position:relative;
+left:0;
+right: 0;
+top:0;
+margin:auto;
+bottom: 0;
+position: absolute;
+
+    
+}
+#circle{
+height: 150px;
+width: 150px;
+border-radius: 50%;
+position: absolute;
+background: red;
+left:0;
+right: 0;
+bottom:0;
+top:0;
+margin:auto;
+}
+
+

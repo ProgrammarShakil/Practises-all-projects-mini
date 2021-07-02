@@ -1,0 +1,7 @@
+body{margin: 0}
+
+.mrgn{height: 200px;
+    width: 200px;
+     background-color: aqua;
+    margin: 50px;
+}

@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <title>add_remove class</title>
+    </head>
+    <style>
+        #btn_dsgn{font-size: 60px;
+                  border-radius: 10px;
+                  background-color: greenyellow;
+                  color: fuchsia;
+        }
+        #demo{background-color: aquamarine;height: 100%;width: 300px;border-radius: 20px;transition-duration: 1s}
+    </style>
+    <body>
+
+        <button id="btn_dsgn">❇</button>
+        <div id="demo" > show function when clicked</div>
+        
+        <script type="text/javascript">
+            document.querySelector("#btn_dsgn").addEventListener('click',function(){
+            
+     
+document.getElementById("demo").style.width="0";
+            });
+                        document.querySelector("#btn_dsgn").addEventListener('dblclick',function(){
+            
+     
+document.getElementById("demo").style.width="500px";
+            });
+            
+       </script>
+        
+    </body>
+</html>

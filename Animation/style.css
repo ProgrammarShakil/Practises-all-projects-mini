@@ -1,0 +1,31 @@
+div{
+background: red;
+height: 200px;
+width: 200px;
+animation-name: shakil;
+animation-duration:5s;
+animation-iteration-count:1;
+animation-timing-function: ease-in;
+position:relative;
+}
+@keyframes shakil {
+     
+   0%{background:hotpink ;
+   top: 0;
+   left:0;}
+    
+    15%{background:blue ;
+    top: 0;
+   left: 200px;}
+    
+    55%{background:green ;
+    left: 200px;
+    top: 200px;
+   }
+    
+    70%{background:blue ;
+  top: 200px;
+  left: 0;}
+   
+   
+}
